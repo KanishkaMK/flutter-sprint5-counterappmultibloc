@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
       child: BlocBuilder<ThemeCubit, bool>(
         builder: (context, state) {
           return MaterialApp(
+            debugShowCheckedModeBanner: false,
             title: 'Flutter Demo',
             theme: (state)?dark:light,
             home: const MyHomePage(title: 'Flutter Demo Home Page'),
